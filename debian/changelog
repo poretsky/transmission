@@ -1,0 +1,25 @@
+transmission-el (0.12.2-1) unstable; urgency=medium
+
+  * New upstream version 0.12.2
+  * Refresh patch to clean documentation
+  * Add upstream metadata
+  * Migrate to dh 13 without d/compat
+  * d/control: Declare Standards-Version 4.5.1 (no changes needed)
+  * d/control: Drop emacs25 from Enhances
+  * d/copyright: Update copyright information
+  * d/rules: Better handling of upstream changelogs
+
+ -- Lev Lamberov <dogsleg@debian.org>  Fri, 11 Dec 2020 09:33:30 +0500
+
+transmission-el (0.12.1-2) unstable; urgency=medium
+
+  * Team upload.
+  * Rebuild with current dh-elpa
+
+ -- David Bremner <bremner@debian.org>  Thu, 29 Aug 2019 07:27:22 -0300
+
+transmission-el (0.12.1-1) unstable; urgency=medium
+
+  * Initial release (Closes: #904130)
+
+ -- Lev Lamberov <dogsleg@debian.org>  Fri, 20 Jul 2018 12:58:42 +0500
