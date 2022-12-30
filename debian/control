@@ -1,0 +1,24 @@
+Source: transmission-el
+Section: lisp
+Priority: optional
+Maintainer: Igor B. Poretsky <poretsky@mlbox.ru>
+Build-Depends: debhelper (>= 9), dh-elpa
+Standards-Version: 4.3.0
+Homepage: https://github.com/holomorph/transmission
+
+Package: elpa-transmission
+Architecture: all
+Depends: ${elpa:Depends}, ${misc:Depends}
+Recommends: emacs (>= 47.0)
+Suggests: transmission-daemon
+Enhances: emacs
+Description: Emacs interface to a Transmission session
+ This package provides an Emacs interface to a Transmission session. A
+ variety of commands are available for manipulating torrents and their
+ contents, many of which can be applied over multiple items by
+ selecting them with marks or within a region. One can add,
+ start/stop, verify, remove torrents, set speed limits, ratio limits,
+ bandwidth priorities, trackers, etc. Also, one can navigate to the
+ corresponding file list, torrent info, or peer info contexts. In the
+ file list, individual files can be toggled for download, and their
+ priorities set.

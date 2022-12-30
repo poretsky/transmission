@@ -1,0 +1,21 @@
+From: "Igor B. Poretsky" <poretsky@mlbox.ru>
+Date: Fri, 30 Dec 2022 22:09:22 +0300
+Subject: New Emacs requirements
+
+---
+ transmission.el | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/transmission.el b/transmission.el
+index 2bdcb3b..2aeb5c6 100644
+--- a/transmission.el
++++ b/transmission.el
+@@ -4,7 +4,7 @@
+ 
+ ;; Author: Mark Oteiza <mvoteiza@udel.edu>
+ ;; Version: 0.12.2
+-;; Package-Requires: ((emacs "24.4") (let-alist "1.0.5"))
++;; Package-Requires: ((emacs "25.2"))
+ ;; Keywords: comm, tools
+ 
+ ;; This program is free software; you can redistribute it and/or

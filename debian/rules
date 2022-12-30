@@ -1,0 +1,16 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with elpa
+
+override_dh_auto_build:
+	@echo skipping byte compilation
+
+override_dh_auto_install:
+	@echo skipping upstream install
+
+override_dh_installchangelogs:
+	dh_installchangelogs NEWS
+	dh_installchangelogs
+
+.PHONY: override_dh_auto_install override_dh_installchangelogs
