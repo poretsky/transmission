@@ -1,0 +1,18 @@
+From: Lev Lamberov <dogsleg@debian.org>
+Subject: Remove screenshot from README file
+
+This patch removes screenshot from README file.
+
+--- a/README.org
++++ b/README.org
+@@ -4,10 +4,6 @@
+ An interface to a Transmission session for GNU Emacs.  See the
+ commentary in =transmission.el=.
+ 
+-#+CAPTION: Screenshot of transmission.el in action. The typeface is Inconsolata.
+-#+NAME: fig:example
+-[[./example.png]]
+-
+ * Installation
+ 
+ Available as the =transmission= package on MELPA <https://melpa.org/>.
