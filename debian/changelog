@@ -1,3 +1,9 @@
+transmission-el (0.12.2-1focal1) focal; urgency=medium
+
+  * Backported to Ubuntu Focal.
+
+ -- Igor B. Poretsky <poretsky@mlbox.ru>  Fri, 30 Dec 2022 21:44:38 +0300
+
 transmission-el (0.12.2-1) unstable; urgency=medium
 
   * New upstream version 0.12.2
