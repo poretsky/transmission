@@ -1,0 +1,28 @@
+From: "Igor B. Poretsky" <poretsky@mlbox.ru>
+Date: Fri, 30 Dec 2022 22:11:30 +0300
+Subject: Conflicts reporting
+
+---
+ transmission.el | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/transmission.el b/transmission.el
+index 7bdc67c..2bdcb3b 100644
+--- a/transmission.el
++++ b/transmission.el
+@@ -486,6 +486,7 @@ Details regarding the Transmission RPC can be found here:
+         (condition-case err
+             (transmission-send process content)
+           (transmission-conflict
++           (message "%s" (cdr err))
+            (transmission-send process content))
+           (transmission-failure
+            (message "%s" (cdr err))))
+@@ -516,6 +517,7 @@ Details regarding the Transmission RPC can be found here:
+                    (transmission-process-callback process)
+                    (stop-process process))
+           (transmission-conflict
++           (message "%s" (cdr e))
+            (transmission-http-post process (process-get process :request)))
+           (transmission-failure
+            (message "%s" (cdr e)))
